@@ -2,6 +2,8 @@ import { ScrollView, View } from "react-native";
 import { Header } from "../components/Header";
 import Constants from "expo-constants";
 import { Banner } from "../banner";
+import { Search } from "../components/Search"
+import { Section } from "../components/section/index"
 
 
 const statusBarHeight = Constants.statusBarHeight;
@@ -18,7 +20,17 @@ export default function Index() {
       }}>
         <Header />
         <Banner/>
+        <Search/>
       </View>
+
+      <Section 
+      name="Comidas em altas" 
+      label="ver mais" 
+      size="text-2xl"
+      action={() => {
+        console.log("Clicou em ver mais")
+      }}
+      />
 
     </ScrollView>
   );
