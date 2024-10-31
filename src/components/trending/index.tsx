@@ -3,15 +3,15 @@ import { FlatList } from 'react-native';
 import { CardHorizontalFood } from "./foods";
 
 export interface FoodsProps {
-    id: string
-    name: string
-    price: number
-    time: string
-    delivery: number
-    rating: number
-    image: string
-    restaurantId: string
-}
+    id: string;
+    name: string;
+    price: number;
+    time: string;
+    delivery: number;
+    rating: number;
+    image: string;
+    restaurantId: string;
+};
 
 export function Trending() {
     const [foods, setFoods] = useState<FoodsProps[]>([]);
